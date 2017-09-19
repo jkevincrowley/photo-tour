@@ -43,13 +43,14 @@ section:last-child {
 
 <div id='map'></div>
 <div id='features'>
-    <section id='test' class='active'>
+    <section id='video' class='active'>
         <h3>Video 1</h3>
         <p> This is a video</p>
         <video width="100%" controls>
   <source src="https://www.youtube.com/watch?v=LVpSrCBdGvU&t=1s" type="video/mp4">
   <source src="https://www.youtube.com/watch?v=LVpSrCBdGvU&t=1s" type="video/ogg">
 </video>
+    <section id='image' class='active'>
         <h3>Image 1</h3>
         <p>This is image text</p>
         <img src="http://landscapesontherun.com/wp-content/uploads/2017/06/20170622-20170622-img_3157.jpg" alt="Awamaki Weaving" width="100%">
@@ -67,7 +68,14 @@ var map = new mapboxgl.Map({
         pitch: 0
 });
 var chapters = {
-    'test': {
+    'video': {
+        bearing: -0,
+        center: [-72.183,-13.174],
+        zoom: 13,
+        speed: 1,
+        pitch: 25
+    },
+    'video': {
         bearing: -0,
         center: [-72.183,-13.174],
         zoom: 13,
